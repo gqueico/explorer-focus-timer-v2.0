@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: hsl(240, 6%, 21%);
+  --bg-color-card: hsl(240, 9%, 89%);
+  --bg-color-card-active: hsl(194, 97%, 31%);
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+html.dark {
+  --bg-color: hsl(240, 6%, 21%);
+  --text-color: hsl(0, 0%, 100%);
+}
