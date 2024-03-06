@@ -20,3 +20,12 @@ html.dark {
   --bg-color: hsl(240, 6%, 21%);
   --text-color: hsl(0, 0%, 100%);
 }
+
+html.dark .ph-moon,
+html:not(.dark) .ph-sun {
+  display: none;
+}
+
+body {
+  background-color: var(--bg-color);
+}
