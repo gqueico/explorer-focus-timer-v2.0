@@ -26,6 +26,17 @@ html:not(.dark) .ph-sun {
   display: none;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  appearance: none;
+}
+
 body {
   background-color: var(--bg-color);
 }
