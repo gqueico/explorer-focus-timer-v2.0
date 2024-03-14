@@ -38,6 +38,7 @@ html:not(.dark) .ph-sun {
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   background-color: var(--bg-color);
 }
 
