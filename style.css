@@ -17,13 +17,17 @@
 }
 
 html.dark {
-  --bg-color: hsl(240, 6%, 21%);
+  --bg-color: hsl(240, 5%, 7%);
   --text-color: hsl(0, 0%, 100%);
 }
 
 html.dark .ph-moon,
 html:not(.dark) .ph-sun {
   display: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .sr-only {
@@ -37,9 +41,25 @@ html:not(.dark) .ph-sun {
   appearance: none;
 }
 
+body,
+input,
+button,
+textarea {
+  font-size: 1.6rem;
+}
+
 body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
   font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
   background-color: var(--bg-color);
+}
+
+#app {
+  display: grid;
+  justify-content: center;
 }
 
 button {
@@ -56,5 +76,10 @@ button {
   right: 3.2rem;
   font-size: 3.2rem;
   color: var(--text-color);
+}
+
+#timer {
+  font-size: 12.6rem;
+  font-weight: 500;
 }
 
