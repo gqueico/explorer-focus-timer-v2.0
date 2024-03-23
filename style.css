@@ -83,3 +83,10 @@ button {
   font-weight: 500;
 }
 
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle {
+  display: none;
+}
+
