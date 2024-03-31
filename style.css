@@ -87,14 +87,3 @@ button {
   margin-top: 1.6rem;
   justify-content: space-between;
 }
-
-#controls .ph {
-  font-size: 4.8rem;
-}
-
-.running .ph-play-circle,
-.running .ph-timer,
-html:not(.running) .ph-pause-circle,
-html:not(.running) .ph-stop-circle {
-  display: none;
-}
