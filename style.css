@@ -87,3 +87,7 @@ button {
   margin-top: 1.6rem;
   justify-content: space-between;
 }
+
+#controls path {
+  fill: var(--text-color);
+}
