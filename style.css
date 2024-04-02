@@ -21,8 +21,8 @@ html.dark {
   --text-color: hsl(0, 0%, 100%);
 }
 
-html.dark .ph-moon,
-html:not(.dark) .ph-sun {
+html.dark .moon,
+html:not(.dark) .sun {
   display: none;
 }
 
