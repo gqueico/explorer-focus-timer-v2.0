@@ -91,3 +91,10 @@ button {
 #controls path {
   fill: var(--text-color);
 }
+
+#sounds button {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  background-color: var(--bg-color-card);
+}
