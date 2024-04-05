@@ -98,3 +98,11 @@ button {
   border-radius: 2.4rem;
   background-color: var(--bg-color-card);
 }
+
+#sounds button.selected {
+  background-color: var(--bg-color-card-active);
+}
+
+#sounds button.selected path {
+  fill: var(--bg-color);
+}
