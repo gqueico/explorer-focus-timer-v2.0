@@ -94,8 +94,42 @@ button {
   justify-content: space-between;
 }
 
-#controls path {
-  fill: var(--text-color);
+#controls button {
+  width: 4.8rem;
+  height: 4.8rem;
+  background-repeat: no-repeat;
+}
+
+.play {
+  background-image: url(./assets/play-dark.svg);
+}
+
+.stop {
+  background-image: url(./assets/stop-dark.svg);
+}
+
+.plus {
+  background-image: url(./assets/plus-dark.svg);
+}
+
+.minus {
+  background-image: url(./assets/minus-dark.svg);
+}
+
+html.dark .play {
+  background-image: url(./assets/play-light.svg);
+}
+
+html.dark .stop {
+  background-image: url(./assets/stop-light.svg);
+}
+
+html.dark .plus {
+  background-image: url(./assets/plus-light.svg);
+}
+
+html.dark .minus {
+  background-image: url(./assets/minus-light.svg);
 }
 
 #sounds {
