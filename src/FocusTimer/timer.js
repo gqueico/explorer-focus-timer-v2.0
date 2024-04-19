@@ -17,8 +17,10 @@ export function countdown() {
     minutes--
   }
 
-  if(minutes = 0) {
+  if(minutes < 0) {
     stop()
+    updateDisplay()
+    return
   }
 
   updateDisplay(minutes, seconds)
