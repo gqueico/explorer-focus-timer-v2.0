@@ -1,13 +1,27 @@
 import state from './state.js'
 import * as element from './elements.js'
+import { stop } from './actions.js'
 
 export function countdown() {
   if(!state.isRunning) {
     return
   }
   
-  console.log('Inicia Timer')
+  let minutes = Number(element.minutes.textContent)
+  let seconds = Number(element.seconds.textContent)
 
+  seconds--
+
+  if(seconds < 0) {
+    seconds = 59
+    minutes--
+  }
+
+  if(minutes = 0) {
+    stop()
+  }
+
+  updateDisplay(minutes, seconds)
   setTimeout(() => countdown(), 1000)
 }
 
