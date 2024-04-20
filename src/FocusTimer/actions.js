@@ -25,3 +25,15 @@ export function increaseTime() {
   
   timer.updateDisplay(minutes)
 }
+
+export function decreaseTime() {
+  let minutes = Number(element.minutes.textContent)
+
+  minutes-=5
+
+  if(minutes < 0) {
+    return
+  }
+
+  timer.updateDisplay(minutes)
+}
