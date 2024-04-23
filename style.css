@@ -101,35 +101,35 @@ button {
 }
 
 .play {
-  background-image: url(./assets/play-dark.svg);
+  background-image: url(./assets/img/play-dark.svg);
 }
 
 .stop {
-  background-image: url(./assets/stop-dark.svg);
+  background-image: url(./assets/img/stop-dark.svg);
 }
 
 .plus {
-  background-image: url(./assets/plus-dark.svg);
+  background-image: url(./assets/img/plus-dark.svg);
 }
 
 .minus {
-  background-image: url(./assets/minus-dark.svg);
+  background-image: url(./assets/img/minus-dark.svg);
 }
 
 html.dark .play {
-  background-image: url(./assets/play-light.svg);
+  background-image: url(./assets/img/play-light.svg);
 }
 
 html.dark .stop {
-  background-image: url(./assets/stop-light.svg);
+  background-image: url(./assets/img/stop-light.svg);
 }
 
 html.dark .plus {
-  background-image: url(./assets/plus-light.svg);
+  background-image: url(./assets/img/plus-light.svg);
 }
 
 html.dark .minus {
-  background-image: url(./assets/minus-light.svg);
+  background-image: url(./assets/img/minus-light.svg);
 }
 
 #sounds {
