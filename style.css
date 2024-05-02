@@ -142,6 +142,8 @@ html.dark .minus {
   width: 13.8rem;
   height: 15.2rem;
   border-radius: 2.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--bg-color-card);
 }
 
@@ -149,6 +151,34 @@ html.dark .minus {
   background-color: var(--bg-color-card-active);
 }
 
-#sounds button.selected path {
-  fill: var(--bg-color);
+#forest {
+  background-image: url(./assets/img/forest-dark.svg);
+}
+
+#rain {
+  background-image: url(./assets/img/rain-dark.svg);
+}
+
+#coffee-shop {
+  background-image: url(./assets/img/coffeeshop-dark.svg);
+}
+
+#fireplace {
+  background-image: url(./assets/img/fireplace-dark.svg);
+}
+
+#forest.selected {
+  background-image: url(./assets/img/forest-light.svg);
+}
+
+#rain.selected {
+  background-image: url(./assets/img/rain-light.svg);
+}
+
+#coffee-shop.selected {
+  background-image: url(./assets/img/coffeeshop-light.svg);
+}
+
+#fireplace.selected {
+  background-image: url(./assets/img/fireplace-light.svg);
 }
