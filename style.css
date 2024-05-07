@@ -147,38 +147,38 @@ html.dark .minus {
   background-color: var(--bg-color-card);
 }
 
-#sounds button.selected {
-  background-color: var(--bg-color-card-active);
-}
-
 #forest {
   background-image: url(./assets/img/forest-dark.svg);
+}
+
+#forest.selected {
+  background-image: url(./assets/img/forest-light.svg);
+  background-color: #7BC950;
 }
 
 #rain {
   background-image: url(./assets/img/rain-dark.svg);
 }
 
+#rain.selected {
+  background-image: url(./assets/img/rain-light.svg);
+  background-color: var(--bg-color-card-active);
+}
+
 #coffee-shop {
   background-image: url(./assets/img/coffeeshop-dark.svg);
+}
+
+#coffee-shop.selected {
+  background-image: url(./assets/img/coffeeshop-light.svg);
+  background-color: #EA638C;
 }
 
 #fireplace {
   background-image: url(./assets/img/fireplace-dark.svg);
 }
 
-#forest.selected {
-  background-image: url(./assets/img/forest-light.svg);
-}
-
-#rain.selected {
-  background-image: url(./assets/img/rain-light.svg);
-}
-
-#coffee-shop.selected {
-  background-image: url(./assets/img/coffeeshop-light.svg);
-}
-
 #fireplace.selected {
   background-image: url(./assets/img/fireplace-light.svg);
+  background-color: #FFAD05;
 }
