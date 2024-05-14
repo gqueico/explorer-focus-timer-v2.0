@@ -1,6 +1,7 @@
 import state from './state.js'
 import * as timer from './timer.js'
 import * as element from './elements.js'
+import * as sounds from './sounds.js'
 
 export function toggleRunning() {
   document.documentElement.classList.add('running')
@@ -36,4 +37,15 @@ export function decreaseTime() {
   }
 
   timer.updateDisplay(minutes)
+}
+
+export function playMusic() {
+  state.itsPlaying = document.documentElement.classList.toggle('music-on')
+
+  if(state.itsPlaying) {
+    sounds.forest.play()
+    return
+  }
+
+  sounds.forest.pause()
 }

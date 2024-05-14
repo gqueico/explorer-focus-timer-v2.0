@@ -1,4 +1,5 @@
 import { controls } from './elements.js';
+import { sounds } from './elements.js'
 import * as actions from './actions.js'
 
 export function registerControls() {
@@ -10,5 +11,12 @@ export function registerControls() {
     }
 
     actions[action]()
+  })
+}
+
+export function registerSoundsButtons() {
+  sounds.addEventListener('click', event => {
+    event.target.classList.toggle('selected')
+    actions.playMusic()
   })
 }
