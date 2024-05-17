@@ -17,6 +17,12 @@ export function registerControls() {
 export function registerSoundsButtons() {
   sounds.addEventListener('click', event => {
     event.target.classList.toggle('selected')
-    actions.playMusic()
+    const music = event.target.dataset.music
+
+    if(music === undefined) {
+      return
+    }
+
+    actions.playMusic(music)
   })
 }
