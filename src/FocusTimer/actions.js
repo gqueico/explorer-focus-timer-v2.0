@@ -7,12 +7,15 @@ export function toggleRunning() {
   document.documentElement.classList.add('running')
   state.isRunning = true
 
+  sounds.buttonPressAudio.play()
   timer.countdown()
 }
 
 export function stop() {
   document.documentElement.classList.remove('running')
   state.isRunning = false
+
+  sounds.buttonPressAudio.play()
 }
 
 export function increaseTime() {
@@ -39,13 +42,13 @@ export function decreaseTime() {
   timer.updateDisplay(minutes)
 }
 
-export function playMusic() {
+export function playMusic(music) {
   state.itsPlaying = document.documentElement.classList.toggle('music-on')
 
   if(state.itsPlaying) {
-    sounds.forest.play()
+    sounds[music].play()
     return
   }
 
-  sounds.forest.pause()
+  sounds[music].pause()
 }
