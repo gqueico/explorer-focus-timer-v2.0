@@ -33,9 +33,9 @@ export function increaseTime() {
 export function decreaseTime() {
   let minutes = Number(element.minutes.textContent)
 
-  minutes-=5
+  minutes-= 5
 
-  if(minutes < 0) {
+  if(minutes < 5) {
     return
   }
 
