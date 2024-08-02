@@ -43,12 +43,8 @@ export function decreaseTime() {
 }
 
 export function playMusic(music) {
-  state.itsPlaying = document.documentElement.classList.toggle('music-on')
+  document.documentElement.classList.add('music-on')
+  state.itsPlaying = true
 
-  if(state.itsPlaying) {
-    sounds[music].play()
-    return
-  }
-
-  sounds[music].pause()
+  sounds[music].play()
 }
